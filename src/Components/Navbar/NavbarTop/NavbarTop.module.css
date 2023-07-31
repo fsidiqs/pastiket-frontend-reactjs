@@ -1,0 +1,44 @@
+:root {
+  --PrimaryColor: hsl(174, 62%, 25%);
+  --HoverColor: hsl(174, 62%, 22%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 0%);
+  --textColor: hsl(174, 5%, 48%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(174, 15%, 97%);
+}
+
+.navbarSection {
+  background: var(--PrimaryColor);
+  padding: 1.5rem 0 2rem 1.5rem;
+}
+.navbarSection .navsDiv {
+  gap: 1rem;
+}
+.navbarSection .navsDiv .icon {
+  padding: 0.5rem;
+  background: var(--greyText);
+  border-radius: 50%;
+  font-size: 2rem;
+}
+.navbarSection .navsDiv .icon:hover {
+  background: var(--blackColor);
+  color: var(--whiteColor);
+}
+.navbarSection .navsDiv .leftIcon {
+  background: var(--whiteColor);
+  color: var(--PrimaryColor);
+}
+.navbarSection .navsDiv .leftIcon:hover {
+  background: var(--PrimaryColor);
+  color: var(--whiteColor);
+}
+.navbarSection .navsDiv .menuName {
+  color: white;
+  font-size: 1.5rem;
+}
+.navbarSection .navsDiv .menuDescription {
+  color: white;
+}/*# sourceMappingURL=NavbarTop.module.css.map */

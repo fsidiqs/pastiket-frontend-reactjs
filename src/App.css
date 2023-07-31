@@ -1,38 +1,99 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
+.red {
+   color: blue;
+}
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Open Sans", sans-serif;
+   transition: 0.3s ease;
+}
+
+:root {
+   --PrimaryColor: hsl(174, 62%, 25%);
+   --HoverColor: hsl(174, 62%, 22%);
+   --whiteColor: hsl(0, 0%, 100%);
+   --blackColor: hsl(0, 0%, 0%);
+   --textColor: hsl(174, 5%, 48%);
+   --whiteColorDeam: hsl(0, 0%, 93%);
+   --greyBg: hsl(0, 0%, 96%);
+   --greyText: rgb(190, 190, 190);
+   --inputColor: hsl(174, 15%, 97%);
+ }
+
+a {
+   text-decoration: none;
+}
+
+li {
+   list-style: none;
+}
+
+.section {
+   padding: 4rem 0 2rem;
+}
+.container {
+   padding-left: 1.5rem;
+   padding-right: 1.5rem;
+}
+
+.icon {
+   font-size: 2rem;
+   cursor: pointer;
+}
+
+.flex {
+   display: flex;
+   align-items: center;
+}
+
+.grid {
+   display: grid;
+   align-items: center;
+}
+
+.btn {
+   padding: 0.4rem 1.5rem;
+   background: var(--PrimaryColor);
+   border: none;
+   outline: none;
+   border-radius: 3rem;
+   cursor: pointer;
+}
+
+.btn a {
+   color: var(--whiteColor);
+   font-weight: 500;
+}
+
+.btn:hover a{
+  color: var(--whiteColor)
+}
+
+.secIntro {
+  max-width: 70%;
   text-align: center;
+  margin: 0 auto 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.secIntro .secTitle{
+  color: var(--blackColor);
+  line-height: 1.5rem;
+  padding-bottom: .5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.secIntro p {
+  font-size: 13px;
+  color: var(--textColor);
+  font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+img, video {
+  width: 100%;
+  height: auto;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  font-size: 100%;
 }

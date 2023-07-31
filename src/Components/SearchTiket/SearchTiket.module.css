@@ -1,0 +1,132 @@
+.mainContent {
+  gap: 1rem;
+}
+.mainContent .searchCard {
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.189);
+}
+.mainContent .searchCard .icon {
+  font-size: 20px;
+  color: var(--textColor);
+}
+.mainContent .searchCard small {
+  font-weight: 500;
+  color: var(--textColor);
+}
+.mainContent .searchCard .destImage {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.mainContent .searchCard .destImage img {
+  height: 100%;
+}
+.mainContent .searchCard .destImage .discount {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background: var(--PrimaryColor);
+  color: var(--whiteColor);
+  border-radius: 3rem;
+  font-size: 10px;
+  font-weight: 500;
+}
+.mainContent .searchCard .searchItems {
+  padding: 1rem;
+}
+.mainContent .searchCard .searchItems .flightType {
+  justify-content: space-around;
+}
+.mainContent .searchCard .searchItems .flightType .status {
+  padding: 5px 10px;
+  color: var(--HoverColor);
+  background: var(--greyBg);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 10px;
+  border: 1px var(--PrimaryColor) solid;
+  flex-grow: 1;
+  margin: 0 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.mainContent .searchCard .searchItems .flightType .status.active {
+  color: var(--whiteColor);
+  background: var(--PrimaryColor);
+  border: none;
+  cursor: default;
+}
+.mainContent .searchCard .searchItems .searchDestination {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+  gap: 0.5rem;
+}
+.mainContent .searchCard .searchItems .searchDestination .singleQuery {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  border-radius: 5px;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.mainContent .searchCard .searchItems .searchDestination .singleQuery .arrow {
+  color: black;
+  font-size: 2rem;
+}
+.mainContent .searchCard .searchItems .searchDate, .mainContent .searchCard .searchItems .searchPackage, .mainContent .searchCard .searchItems .searchAirline {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+  gap: 0.5rem;
+  flex-direction: row;
+}
+.mainContent .searchCard .searchItems .searchDate .singleQuery, .mainContent .searchCard .searchItems .searchPackage .singleQuery, .mainContent .searchCard .searchItems .searchAirline .singleQuery {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  border-radius: 5px;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.mainContent .searchCard .searchItems .searchDate .singleQuery .arrow, .mainContent .searchCard .searchItems .searchPackage .singleQuery .arrow, .mainContent .searchCard .searchItems .searchAirline .singleQuery .arrow {
+  color: black;
+  font-size: 2rem;
+}
+.mainContent .searchCard .searchItems .searchDate :nth-child(1), .mainContent .searchCard .searchItems .searchPackage :nth-child(1), .mainContent .searchCard .searchItems .searchAirline :nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+.mainContent .searchCard .searchItems .searchDate :nth-child(2), .mainContent .searchCard .searchItems .searchPackage :nth-child(2), .mainContent .searchCard .searchItems .searchAirline :nth-child(2) {
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+.mainContent .searchCard .searchItems .btn {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  padding: 0.6rem;
+  color: var(--whiteColor);
+  font-weight: 600;
+  gap: 0.5rem;
+}
+.mainContent .searchCard .searchItems .btn .icon {
+  color: var(--whiteColor);
+}/*# sourceMappingURL=SearchTiket.module.css.map */
