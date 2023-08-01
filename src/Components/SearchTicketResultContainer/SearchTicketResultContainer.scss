@@ -1,7 +1,7 @@
 .mainContent {
     gap: 1rem;
 
-    .searchCard {
+    .ticketCard {
         border-radius: 1rem;
         overflow: hidden;
         padding: 0.5rem;
@@ -41,19 +41,36 @@
             }
         }
 
-        .searchItems {
+        .ticketContent {
             padding: 1rem;
 
-            .flightType {
+            .flightHeader {
                 // align-content: center;
-                justify-content: space-around;
+                // justify-content: space-around;
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                gap: 5px;
+                align-items: center;
+                .flightText {
+                    grid-column: 2/-1;
+                }
+            }
+
+            .ticketDetails {
+                width: 100%;
+                // flex-wrap: wrap;
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 0;
+                gap: 0.5rem;
+                flex-direction: row;
 
                 .status {
                     padding: 2px;
                     color: var(--HoverColor);
                     background: var(--greyBg);
-                    border-radius: 10px;
-                    font-size: 1rem;
+                    border-radius: 8px;
+                    font-size: 0.8rem;
                     border: 1px var(--PrimaryColor) solid;
                     // flex-grow: 1;
                     margin: 0 5px;
@@ -67,48 +84,29 @@
                     border: none;
                     cursor: default;
                 }
-            }
 
-            .searchDate {
-                width: 100%;
-                // flex-wrap: wrap;
-                display: flex;
-                justify-content: space-around;
-                padding: 1rem 0;
-                gap: 0.5rem;
-                flex-direction: row;
-                .singleQuery {
+                .ticketInfo {
                     display: flex;
                     flex-direction: column;
-                    padding: 5px 10px;
+                    padding: 5px 0;
                     border-radius: 5px;
                     gap: 0.5rem;
                     justify-content: center;
-
-                    .arrow {
-                        color: black;
-                        font-size: 2rem;
-                    }
-                }
-                :nth-child(1) {
-                    display: block;
-                    flex-grow: 0;
-                    flex-shrink: 1;
-                    flex-basis: auto;
-                    align-self: auto;
-                    order: 0;
-                }
-
-                :nth-child(2) {
-                    display: block;
-                    flex-grow: 1;
-                    flex-shrink: 1;
-                    flex-basis: auto;
-                    align-self: auto;
-                    order: 0;
                 }
             }
+            .ticketFooter {
+                display: flex;
+                justify-content: space-between;
 
+                .availableSeats {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .ticketPrice {
+                    color: var(--PrimaryColor);
+                }
+            }
             .btn {
                 margin-top: 1rem;
                 width: 100%;

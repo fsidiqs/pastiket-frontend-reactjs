@@ -1,31 +1,31 @@
 .mainContent {
   gap: 1rem;
 }
-.mainContent .searchCard {
+.mainContent .ticketCard {
   border-radius: 1rem;
   overflow: hidden;
   padding: 0.5rem;
   box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.189);
 }
-.mainContent .searchCard .icon {
+.mainContent .ticketCard .icon {
   font-size: 20px;
   color: var(--textColor);
 }
-.mainContent .searchCard small {
+.mainContent .ticketCard small {
   font-weight: 500;
   color: var(--textColor);
 }
-.mainContent .searchCard .destImage {
+.mainContent .ticketCard .destImage {
   position: relative;
   height: 200px;
   width: 100%;
   border-radius: 1rem;
   overflow: hidden;
 }
-.mainContent .searchCard .destImage img {
+.mainContent .ticketCard .destImage img {
   height: 100%;
 }
-.mainContent .searchCard .destImage .discount {
+.mainContent .ticketCard .destImage .discount {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -36,66 +36,63 @@
   font-size: 10px;
   font-weight: 500;
 }
-.mainContent .searchCard .searchItems {
+.mainContent .ticketCard .ticketContent {
   padding: 1rem;
 }
-.mainContent .searchCard .searchItems .flightType {
-  justify-content: space-around;
+.mainContent .ticketCard .ticketContent .flightHeader {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+  align-items: center;
 }
-.mainContent .searchCard .searchItems .flightType .status {
+.mainContent .ticketCard .ticketContent .flightHeader .flightText {
+  grid-column: 2/-1;
+}
+.mainContent .ticketCard .ticketContent .ticketDetails {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  gap: 0.5rem;
+  flex-direction: row;
+}
+.mainContent .ticketCard .ticketContent .ticketDetails .status {
   padding: 2px;
   color: var(--HoverColor);
   background: var(--greyBg);
-  border-radius: 10px;
-  font-size: 1rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
   border: 1px var(--PrimaryColor) solid;
   margin: 0 5px;
   text-align: center;
   cursor: pointer;
 }
-.mainContent .searchCard .searchItems .flightType .status.active {
+.mainContent .ticketCard .ticketContent .ticketDetails .status.active {
   color: var(--whiteColor);
   background: var(--PrimaryColor);
   border: none;
   cursor: default;
 }
-.mainContent .searchCard .searchItems .searchDate {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  padding: 1rem 0;
-  gap: 0.5rem;
-  flex-direction: row;
-}
-.mainContent .searchCard .searchItems .searchDate .singleQuery {
+.mainContent .ticketCard .ticketContent .ticketDetails .ticketInfo {
   display: flex;
   flex-direction: column;
-  padding: 5px 10px;
+  padding: 5px 0;
   border-radius: 5px;
   gap: 0.5rem;
   justify-content: center;
 }
-.mainContent .searchCard .searchItems .searchDate .singleQuery .arrow {
-  color: black;
-  font-size: 2rem;
+.mainContent .ticketCard .ticketContent .ticketFooter {
+  display: flex;
+  justify-content: space-between;
 }
-.mainContent .searchCard .searchItems .searchDate :nth-child(1) {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
+.mainContent .ticketCard .ticketContent .ticketFooter .availableSeats {
+  display: flex;
+  flex-direction: column;
 }
-.mainContent .searchCard .searchItems .searchDate :nth-child(2) {
-  display: block;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
+.mainContent .ticketCard .ticketContent .ticketFooter .ticketPrice {
+  color: var(--PrimaryColor);
 }
-.mainContent .searchCard .searchItems .btn {
+.mainContent .ticketCard .ticketContent .btn {
   margin-top: 1rem;
   width: 100%;
   text-align: center;
@@ -105,6 +102,6 @@
   font-weight: 600;
   gap: 0.5rem;
 }
-.mainContent .searchCard .searchItems .btn .icon {
+.mainContent .ticketCard .ticketContent .btn .icon {
   color: var(--whiteColor);
 }/*# sourceMappingURL=SearchTicketResultContainer.module.css.map */
