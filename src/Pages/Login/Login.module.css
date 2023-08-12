@@ -1,0 +1,85 @@
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.logoContainer {
+  text-align: center;
+  margin: 24px 0;
+}
+.logoContainer .logo {
+  width: 100px;
+}
+
+.inputWrapper {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.formControl {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  overflow: auto;
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content .header,
+.content .footer {
+  text-align: center;
+  max-width: 367px;
+}
+.content h1,
+.content h3,
+.content label,
+.content input,
+.content .footer {
+  color: var(--PrimaryColor);
+}
+.content svg.logo {
+  width: 166px;
+  margin-bottom: 30px;
+}
+.content h1.title {
+  margin: 29px 0 12px 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 24px;
+}
+.content h3.description {
+  margin: 12px 0 35px 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 199%;
+}
+.content form {
+  width: 100%;
+  max-width: 367px;
+  margin: 0 auto;
+}
+.content form .MuiInputBase-root {
+  height: 45px;
+  border: 0.8px solid #e1e1e1;
+  border-radius: 5px;
+  padding: 12px 20px;
+}
+.content form .MuiSelect-select {
+  margin-left: -20px !important;
+  margin-right: -20px !important;
+}
+.content .md {
+  max-width: 100%;
+  padding: 40px 47px;
+}
+.content .md form {
+  width: 100%;
+  max-width: 100%;
+}/*# sourceMappingURL=Login.module.css.map */

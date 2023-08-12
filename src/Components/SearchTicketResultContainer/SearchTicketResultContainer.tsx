@@ -1,7 +1,3 @@
-import { AiFillDollarCircle } from "react-icons/ai";
-import { AiOutlineCalendar } from "react-icons/ai";
-import { BsFillPersonFill } from "react-icons/bs";
-import { SiEthiopianairlines } from "react-icons/si";
 
 import styles from "./SearchTicketResultContainer.module.css";
 import React from "react";

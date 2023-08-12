@@ -1,12 +1,65 @@
-.mainContent {
-    gap: 1rem;
+.flightDetails {
+    > * {
+        margin: 1rem 0;
+    }
+    .flightHeader {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+
+        .flightText {
+            grid-column: 1/10;
+        }
+
+        .flightBadge {
+            grid-column: span 3 / auto;
+            .status {
+                padding: 2px;
+                color: var(--HoverColor);
+                background: var(--greyBg);
+                border-radius: 10px;
+                font-size: 0.6rem;
+                border: 1px var(--PrimaryColor) solid;
+                margin: 0 5px;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            .status.active {
+                color: var(--whiteColor);
+                background: var(--PrimaryColor);
+                border: none;
+                cursor: default;
+            }
+        }
+    }
 
     .ticketCard {
         border-radius: 1rem;
         overflow: hidden;
         padding: 0.5rem;
         box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.189);
-
+        .ticketContent {
+            > * {
+                padding: 1rem 0;
+            }
+            .ticketHeader {
+                .departureInfo {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .airlineInfo {
+                    // align-content: center;
+                    // justify-content: space-around;
+                    display: grid;
+                    grid-template-columns: repeat(6, 1fr);
+                    gap: 5px;
+                    align-items: center;
+                    .flightText {
+                        grid-column: 2/6;
+                    }
+                }
+            }
+        }
         .icon {
             font-size: 20px;
             color: var(--textColor);
@@ -43,16 +96,16 @@
 
         .ticketContent {
             padding: 1rem;
-
-            .flightHeader {
-                // align-content: center;
-                // justify-content: space-around;
+            display: flex;
+            flex-direction: column;
+            margin: 1rem;
+            .flightSchedule {
                 display: grid;
-                grid-template-columns: repeat(6, 1fr);
-                gap: 5px;
+                grid-template-columns: repeat(3, 1fr);
                 align-items: center;
-                .flightText {
-                    grid-column: 2/-1;
+                .flightScheduleItem{
+                    display: flex;
+                    flex-direction: column;
                 }
             }
 
@@ -123,4 +176,23 @@
             }
         }
     }
+
+    .inputSeats {
+        
+    }
+    .btn {
+        margin-top: 1rem;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding: 0.6rem;
+        color: var(--whiteColor);
+        font-weight: 600;
+        gap: 0.5rem;
+
+        .icon {
+            color: var(--whiteColor);
+        }
+    }
+
 }

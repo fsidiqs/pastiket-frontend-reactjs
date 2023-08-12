@@ -1,0 +1,166 @@
+.flightDetails > * {
+  margin: 1rem 0;
+}
+.flightDetails .flightHeader {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.flightDetails .flightHeader .flightText {
+  grid-column: 1/10;
+}
+.flightDetails .flightHeader .flightBadge {
+  grid-column: span 3/auto;
+}
+.flightDetails .flightHeader .flightBadge .status {
+  padding: 2px;
+  color: var(--HoverColor);
+  background: var(--greyBg);
+  border-radius: 10px;
+  font-size: 0.6rem;
+  border: 1px var(--PrimaryColor) solid;
+  margin: 0 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.flightDetails .flightHeader .flightBadge .status.active {
+  color: var(--whiteColor);
+  background: var(--PrimaryColor);
+  border: none;
+  cursor: default;
+}
+.flightDetails .ticketCard {
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.189);
+}
+.flightDetails .ticketCard .ticketContent > * {
+  padding: 1rem 0;
+}
+.flightDetails .ticketCard .ticketContent .ticketHeader .departureInfo {
+  display: flex;
+  flex-direction: column;
+}
+.flightDetails .ticketCard .ticketContent .ticketHeader .airlineInfo {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+  align-items: center;
+}
+.flightDetails .ticketCard .ticketContent .ticketHeader .airlineInfo .flightText {
+  grid-column: 2/6;
+}
+.flightDetails .ticketCard .icon {
+  font-size: 20px;
+  color: var(--textColor);
+}
+.flightDetails .ticketCard small {
+  font-weight: 500;
+  color: var(--textColor);
+}
+.flightDetails .ticketCard .destImage {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.flightDetails .ticketCard .destImage img {
+  height: 100%;
+}
+.flightDetails .ticketCard .destImage .discount {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background: var(--PrimaryColor);
+  color: var(--whiteColor);
+  border-radius: 3rem;
+  font-size: 10px;
+  font-weight: 500;
+}
+.flightDetails .ticketCard .ticketContent {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+.flightDetails .ticketCard .ticketContent .flightSchedule {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+.flightDetails .ticketCard .ticketContent .flightSchedule .flightScheduleItem {
+  display: flex;
+  flex-direction: column;
+}
+.flightDetails .ticketCard .ticketContent .ticketDetails {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  gap: 0.5rem;
+  flex-direction: row;
+}
+.flightDetails .ticketCard .ticketContent .ticketDetails .status {
+  padding: 2px 1px;
+  color: var(--HoverColor);
+  background: var(--greyBg);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  border: 1px var(--PrimaryColor) solid;
+  margin: 0 2px;
+  text-align: center;
+  cursor: pointer;
+}
+.flightDetails .ticketCard .ticketContent .ticketDetails .status.active {
+  color: var(--whiteColor);
+  background: var(--PrimaryColor);
+  border: none;
+  cursor: default;
+}
+.flightDetails .ticketCard .ticketContent .ticketDetails .ticketInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+  border-radius: 5px;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.flightDetails .ticketCard .ticketContent .ticketFooter {
+  display: flex;
+  justify-content: space-between;
+}
+.flightDetails .ticketCard .ticketContent .ticketFooter .availableSeats {
+  display: flex;
+  flex-direction: column;
+}
+.flightDetails .ticketCard .ticketContent .ticketFooter .ticketPrice {
+  color: var(--PrimaryColor);
+}
+.flightDetails .ticketCard .ticketContent .btn {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  padding: 0.6rem;
+  color: var(--whiteColor);
+  font-weight: 600;
+  gap: 0.5rem;
+}
+.flightDetails .ticketCard .ticketContent .btn .icon {
+  color: var(--whiteColor);
+}
+.flightDetails .btn {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  padding: 0.6rem;
+  color: var(--whiteColor);
+  font-weight: 600;
+  gap: 0.5rem;
+}
+.flightDetails .btn .icon {
+  color: var(--whiteColor);
+}/*# sourceMappingURL=TicketDetail.module.css.map */

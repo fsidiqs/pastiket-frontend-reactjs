@@ -20,10 +20,14 @@ const SearchTiket: React.FC = () => {
          <div className={`${styles.mainContent} grid`}>
             {Offers.map((offer) => {
                return (
-                  <div className={styles.searchCard}>
+                  <div className={styles.searchCard} key={offer.id}>
                      <div className={styles.searchItems}>
                         <div className={`${styles.flightType} flex`}>
-                           <span className={`${styles.status} ${styles.active}`}>Semua</span>
+                           <span
+                              className={`${styles.status} ${styles.active}`}
+                           >
+                              Semua
+                           </span>
                            <span className={styles.status}>Direct</span>
                            <span className={styles.status}>Transit</span>
                         </div>
@@ -35,7 +39,9 @@ const SearchTiket: React.FC = () => {
                               <small>CGK - Jakarta</small>
                            </div>
                            <div className={styles.singleQuery}>
-                              <BsArrowRightShort className={`${styles.icon} ${styles.arrow}`} />
+                              <BsArrowRightShort
+                                 className={`${styles.icon} ${styles.arrow}`}
+                              />
                            </div>
                            <div className={styles.singleQuery}>
                               <div>Tujuan</div>
@@ -44,7 +50,7 @@ const SearchTiket: React.FC = () => {
                         </div>
 
                         <div className={styles.searchDate}>
-                           <AiOutlineCalendar className={styles.icon}/>
+                           <AiOutlineCalendar className={styles.icon} />
                            <div className={styles.singleQuery}>
                               <div>Tanggal Pergi</div>
                               <small>Kam, 02 Feb 2023 (9 Days)</small>
@@ -52,7 +58,7 @@ const SearchTiket: React.FC = () => {
                         </div>
 
                         <div className={styles.searchPackage}>
-                           <BsFillPersonFill className={styles.icon}/>
+                           <BsFillPersonFill className={styles.icon} />
                            <div className={styles.singleQuery}>
                               <div>Jemaah</div>
                               <small>Paketan (25 pax, 35pax)</small>
@@ -60,14 +66,16 @@ const SearchTiket: React.FC = () => {
                         </div>
 
                         <div className={styles.searchAirline}>
-                           <SiEthiopianairlines className={styles.icon}/>
+                           <SiEthiopianairlines className={styles.icon} />
                            <div className={styles.singleQuery}>
                               <div>Maskapai</div>
                               <small>Semua Maskapai</small>
                            </div>
                         </div>
 
-                        <button className={`${styles.btn} btn flex`}>Cari</button>
+                        <button className={`${styles.btn} btn flex`}>
+                           Cari
+                        </button>
                      </div>
                   </div>
                );

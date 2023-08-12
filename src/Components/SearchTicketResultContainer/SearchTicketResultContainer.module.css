@@ -57,13 +57,13 @@
   flex-direction: row;
 }
 .mainContent .ticketCard .ticketContent .ticketDetails .status {
-  padding: 2px;
+  padding: 2px 1px;
   color: var(--HoverColor);
   background: var(--greyBg);
   border-radius: 8px;
   font-size: 0.8rem;
   border: 1px var(--PrimaryColor) solid;
-  margin: 0 5px;
+  margin: 0 2px;
   text-align: center;
   cursor: pointer;
 }
