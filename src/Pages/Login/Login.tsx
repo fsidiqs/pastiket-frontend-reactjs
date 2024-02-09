@@ -40,36 +40,38 @@ const LoginPage: React.FC = () => {
 
    const loginHandler: SubmitHandler<LoginFormInputs> = (state) => {
       closeSnackbar();
+      // dispatch(setAuthToken("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"));
 
-      login({
-         request: {
-            email: state.email,
-            password: state.password,
-         },
-         onRequest: (state) => setLoading(state),
-         onSuccess: ({ data }) => {
+      // replace dispatch with login
+      // login({
+      //    request: {
+      //       email: state.email,
+      //       password: state.password,
+      //    },
+      //    onRequest: (state) => setLoading(state),
+      //    onSuccess: ({ data }) => {
            
-            dispatch(setAuthToken(data.auth_token));
-         },
-         onError: ({ type, invalid_args, message }) => {
-            switch (type) {
-               case ResponseType.USER_NOT_FOUND:
-                  setError("email", {
-                     // message: t("validation.email_not_registered"),
-                  });
+      //       dispatch(setAuthToken(data.auth_token));
+      //    },
+      //    onError: ({ type, invalid_args, message }) => {
+      //       switch (type) {
+      //          case ResponseType.USER_NOT_FOUND:
+      //             setError("email", {
+      //                // message: t("validation.email_not_registered"),
+      //             });
 
-                  break;
-               case ResponseType.WRONG_PASSWORD:
-                  setError("password", {
-                     // message: t("validation.wrong_password"),
-                  });
+      //             break;
+      //          case ResponseType.WRONG_PASSWORD:
+      //             setError("password", {
+      //                // message: t("validation.wrong_password"),
+      //             });
 
-                  break;
-               default:
-                  enqueueSnackbar(message, { variant: "error" });
-            }
-         },
-      });
+      //             break;
+      //          default:
+      //             enqueueSnackbar(message, { variant: "error" });
+      //       }
+      //    },
+      // });
    };
 
    useEffect(() => {

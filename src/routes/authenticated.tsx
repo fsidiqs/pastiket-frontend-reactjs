@@ -64,9 +64,10 @@ const Authenticated = () => {
    console.log("aspiron before authenticated");
    console.log();
    // aspiron debugger
-   if (!authenticated) {
-      return <Navigate to="/login" replace />;
-   }
+   // TODO! uncomment this line
+   // if (!authenticated) {
+      // return <Navigate to="/login" replace />;
+   // }
 
    return <Outlet />;
 };

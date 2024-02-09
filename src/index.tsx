@@ -21,9 +21,7 @@ root.render(
             maxSnack={3}
             anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
          >
-            <BrowserRouter>
-               <App />
-            </BrowserRouter>
+            <App />
          </SnackbarProvider>
       </React.StrictMode>
    </Provider>

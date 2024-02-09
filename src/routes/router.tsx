@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, RouterProvider, Routes, createBrowserRouter } from "react-router-dom";
 import HomePage from "../Pages/HomePage/HomePage";
 import TicketsPage from "../Pages/TicketsPage/TicketsPage";
 import SearchTicketResultPage from "../Pages/SearchTicketResultPage/SearchResultPage";
@@ -7,23 +7,48 @@ import LoginPage from "../Pages/Login/Login";
 import NotAuthenticated from "./not-authenticated";
 import Authenticated from "./authenticated";
 
-const BaseRouter = () => (
-   <Routes>
-      <Route path="/" element={<Authenticated />}>
-         <Route index element={<HomePage />} />
-         <Route path="/tickets" element={<TicketsPage />} />
-         <Route
-            path="/search-ticket-results"
-            element={<SearchTicketResultPage />}
-         />
-         <Route path="/ticket-details" element={<TicketDetailPage />} />
-      </Route>
-      <Route element={<NotAuthenticated />}>
-         <Route path="/login" element={<LoginPage />} />
-         {/* <Route path="/forgot-password" element={<ForgotPasswordPage />} />
-         <Route path="/reset-password" element={<ResetPasswordPage />} /> */}
-      </Route>
-   </Routes>
-);
+// const BaseRouter = () => (
+//    <Routes>
+//       <Route path="/" element={<Authenticated />}>
+//          <Route index element={<HomePage />} />
+//          <Route path="/tickets" element={<TicketsPage />} />
+//          <Route
+//             path="/search-ticket-results"
+//             element={<SearchTicketResultPage />}
+//          />
+//          <Route path="/ticket-details" element={<TicketDetailPage />} />
+//       </Route>
+//       <Route element={<NotAuthenticated />}>
+//          <Route path="/login" element={<LoginPage />} />
+//          {/* <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+//          <Route path="/reset-password" element={<ResetPasswordPage />} /> */}
+//       </Route>
+//    </Routes>
+// );
 
-export default BaseRouter;
+const router = createBrowserRouter([
+   {
+      path: "/",
+      element: <Authenticated />,
+      children: [
+         { path: "/", element: <HomePage /> },
+         { path: "/tickets", element: <TicketsPage /> },
+         { path: "/search-ticket-results", element: <SearchTicketResultPage /> },
+         { path: "/ticket-details", element: <TicketDetailPage /> }
+      ]
+   },
+   {
+      path: "/",
+      element: <NotAuthenticated />,
+      children: [
+         { path: "/login", element: <LoginPage /> }
+         // { path: "/forgot-password", element: <ForgotPasswordPage /> },
+         // { path: "/reset-password", element: <ResetPasswordPage /> }
+      ]
+   }
+])
+
+
+export default function Router() {
+   return <RouterProvider router={router} />;
+};
