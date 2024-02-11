@@ -39,11 +39,11 @@ const Navigation = () => {
                <HiOutlineTicket className={`${NavigationCSS.navItemIcon}`} />
                <span className={`${NavigationCSS.t133}`}>Tiket</span>
             </NavLink>
-            <NavLink to="history" className={`${NavigationCSS.navItem}`}>
+            <NavLink to="#" className={`${NavigationCSS.navItem}`}>
                <GrDocumentTime className={`${NavigationCSS.navItemIcon}`} />
                <span className={`${NavigationCSS.t136}`}>Riwayat</span>
             </NavLink>
-            <NavLink to="account" className={`${NavigationCSS.navItem}`}>
+            <NavLink to="#" className={`${NavigationCSS.navItem}`}>
                <HiOutlineUser className={`${NavigationCSS.navItemIcon}`} />
 
                <span className={`${NavigationCSS.t139}`}>Akun</span>

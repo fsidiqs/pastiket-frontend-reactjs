@@ -1,16 +1,16 @@
 import NavigationTop from "../../Components/Navigation/NavigationTop/NavigationTop";
-import SearchTicketResultContainer from "../../Components/SearchTicketResultContainer/SearchTicketResultContainer";
+import SearchTicketResultsContainer from "../../Components/SearchTicketResultContainer/SearchTicketResultContainer";
 
-const SearchTicketResultPage: React.FC = () => {
+const SearchTicketResultsPage: React.FC = () => {
    // aspiron debugger
    console.log('aspiron ok');
    // aspiron debugger
    return (
       <>
          <NavigationTop MenuName="CGK - JED" MenuDescription="CGK - Jakarta -> JDH - Jeddah"/>
-         <SearchTicketResultContainer/>
+         <SearchTicketResultsContainer/>
       </>
    );
 };
 
-export default SearchTicketResultPage;
+export default SearchTicketResultsPage;
