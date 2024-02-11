@@ -1,5 +1,4 @@
 /*! CSS Used from: http://127.0.0.1:5500/css/responsive.css */
-@media screen and (max-width: 480px) {
    .flightFilterWrapper {
       display: flex;
       flex-direction: column;
@@ -65,5 +64,4 @@
       padding-right: 15px;
       row-gap: 10px;
    }
-}
 /*! CSS Used from: http://127.0.0.1:5500/css/framework.css */

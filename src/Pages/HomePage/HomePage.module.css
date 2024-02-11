@@ -1,9 +1,7 @@
-@media screen and (max-width: 480px) {
-   self {
-      display: flex;
-      row-gap: 25px;
-      flex-direction: column;
-      margin-bottom: 0px;
-      padding-bottom: 125px;
-   }
+.bodyWrapper {
+   display: flex;
+   row-gap: 25px;
+   flex-direction: column;
+   margin-bottom: 0px;
+   padding-bottom: 125px;
 }

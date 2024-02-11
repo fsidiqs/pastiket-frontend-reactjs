@@ -60,7 +60,7 @@ const Flights = [
    },
 ];
 
-const Home = () => {
+const FlightInfo = () => {
    return (
       <div className={FlightInfoCSS.componentWrapper}>
          {Flights.map((flight) => {
@@ -119,4 +119,4 @@ const Home = () => {
    );
 };
 
-export default Home;
+export default FlightInfo;

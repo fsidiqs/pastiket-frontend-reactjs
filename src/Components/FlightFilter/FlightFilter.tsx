@@ -26,7 +26,19 @@ const FlightFilter = () => {
 
             <input type="button" value="Mei" className="button1" />
 
-            <input type="button" value="Mar" className="button1" />
+            <input type="button" value="Jun" className="button1" />
+
+            <input type="button" value="Jul" className="button1" />
+
+            <input type="button" value="Agu" className="button1" />
+
+            <input type="button" value="Sep" className="button1" />
+
+            <input type="button" value="Okt" className="button1" />
+
+            <input type="button" value="Nop" className="button1" />
+
+            <input type="button" value="Des" className="button1" />
          </div>
       </div>
    );
