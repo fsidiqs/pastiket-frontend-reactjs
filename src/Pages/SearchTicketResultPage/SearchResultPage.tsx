@@ -1,4 +1,4 @@
-import NavbarTop from "../../Components/Navbar/NavbarTop/NavbarTop";
+import NavigationTop from "../../Components/Navigation/NavigationTop/NavigationTop";
 import SearchTicketResultContainer from "../../Components/SearchTicketResultContainer/SearchTicketResultContainer";
 
 const SearchTicketResultPage: React.FC = () => {
@@ -7,7 +7,7 @@ const SearchTicketResultPage: React.FC = () => {
    // aspiron debugger
    return (
       <>
-         <NavbarTop MenuName="CGK - JED" MenuDescription="CGK - Jakarta -> JDH - Jeddah"/>
+         <NavigationTop MenuName="CGK - JED" MenuDescription="CGK - Jakarta -> JDH - Jeddah"/>
          <SearchTicketResultContainer/>
       </>
    );

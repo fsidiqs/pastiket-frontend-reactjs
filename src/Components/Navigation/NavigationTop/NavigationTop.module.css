@@ -10,35 +10,35 @@
   --inputColor: hsl(174, 15%, 97%);
 }
 
-.navbarSection {
+.navigationSection {
   background: var(--PrimaryColor);
   padding: 1.5rem 0 2rem 1.5rem;
 }
-.navbarSection .navsDiv {
+.navigationSection .navsDiv {
   gap: 1rem;
 }
-.navbarSection .navsDiv .icon {
+.navigationSection .navsDiv .icon {
   padding: 0.5rem;
   background: var(--greyText);
   border-radius: 50%;
   font-size: 2rem;
 }
-.navbarSection .navsDiv .icon:hover {
+.navigationSection .navsDiv .icon:hover {
   background: var(--blackColor);
   color: var(--whiteColor);
 }
-.navbarSection .navsDiv .leftIcon {
+.navigationSection .navsDiv .leftIcon {
   background: var(--whiteColor);
   color: var(--PrimaryColor);
 }
-.navbarSection .navsDiv .leftIcon:hover {
+.navigationSection .navsDiv .leftIcon:hover {
   background: var(--PrimaryColor);
   color: var(--whiteColor);
 }
-.navbarSection .navsDiv .menuName {
+.navigationSection .navsDiv .menuName {
   color: white;
   font-size: 1.5rem;
 }
-.navbarSection .navsDiv .menuDescription {
+.navigationSection .navsDiv .menuDescription {
   color: white;
-}/*# sourceMappingURL=NavbarTop.module.css.map */
+}

@@ -1,10 +1,10 @@
-import NavbarTop from "../../Components/Navbar/NavbarTop/NavbarTop";
+import NavigationTop from "../../Components/Navigation/NavigationTop/NavigationTop";
 import SearchTiket from "../../Components/SearchTiket/SearchTiket";
 
 const TicketsPage: React.FC = () => {
    return (
       <>
-         <NavbarTop MenuName="Cari Tiket" />
+         <NavigationTop MenuName="Cari Tiket" />
          <SearchTiket/>
       </>
    );

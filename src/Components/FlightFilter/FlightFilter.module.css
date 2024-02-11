@@ -1,0 +1,69 @@
+/*! CSS Used from: http://127.0.0.1:5500/css/responsive.css */
+@media screen and (max-width: 480px) {
+   .flightFilterWrapper {
+      display: flex;
+      flex-direction: column;
+      padding-left: 15px;
+      padding-right: 15px;
+      row-gap: 10px;
+  }
+
+   .header1 {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .dateFilterHeader{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   .dateFilter {
+      display: flex;
+      column-gap: 5px;
+      overflow: scroll;
+   }
+   .heading1Text {
+      line-height: 24px;
+      font-weight: 700;
+   }
+   .buttonPrimary1 {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 12px;
+      padding-left: 12px;
+      background: rgb(0, 0, 0);
+      font-weight: 400;
+      color: rgb(253, 246, 246);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      min-width: 69px;
+      justify-content: center;
+      border-radius: 8px;
+   }
+   .button1 {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 12px;
+      padding-left: 12px;
+      background: rgb(255, 255, 255);
+      font-weight: 400;
+      color: rgb(0, 0, 0);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      min-width: 69px;
+      justify-content: center;
+      border-radius: 8px;
+      border: 1px solid rgba(0, 0, 0, 1);
+   }
+   .flightFilterWrapper {
+      display: flex;
+      flex-direction: column;
+      padding-left: 15px;
+      padding-right: 15px;
+      row-gap: 10px;
+   }
+}
+/*! CSS Used from: http://127.0.0.1:5500/css/framework.css */

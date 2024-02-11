@@ -1,4 +1,9 @@
-import { Route, RouterProvider, Routes, createBrowserRouter } from "react-router-dom";
+import {
+   Route,
+   RouterProvider,
+   Routes,
+   createBrowserRouter,
+} from "react-router-dom";
 import HomePage from "../Pages/HomePage/HomePage";
 import TicketsPage from "../Pages/TicketsPage/TicketsPage";
 import SearchTicketResultPage from "../Pages/SearchTicketResultPage/SearchResultPage";
@@ -6,6 +11,7 @@ import TicketDetailPage from "../Pages/TicketDetailPage/TicketDetailPage";
 import LoginPage from "../Pages/Login/Login";
 import NotAuthenticated from "./not-authenticated";
 import Authenticated from "./authenticated";
+import Navigation from "../Components/Navigation/NavigationMain/Navigation";
 
 // const BaseRouter = () => (
 //    <Routes>
@@ -31,24 +37,32 @@ const router = createBrowserRouter([
       path: "/",
       element: <Authenticated />,
       children: [
-         { path: "/", element: <HomePage /> },
-         { path: "/tickets", element: <TicketsPage /> },
-         { path: "/search-ticket-results", element: <SearchTicketResultPage /> },
-         { path: "/ticket-details", element: <TicketDetailPage /> }
-      ]
+         {
+            path: "/",
+            element: <Navigation />,
+            children: [
+               { path: "/", element: <HomePage /> },
+               { path: "/search-ticket", element: <TicketsPage /> },
+               {
+                  path: "/search-ticket-results",
+                  element: <SearchTicketResultPage />,
+               },
+               { path: "/ticket-details", element: <TicketDetailPage /> },
+            ],
+         },
+      ],
    },
    {
       path: "/",
       element: <NotAuthenticated />,
       children: [
-         { path: "/login", element: <LoginPage /> }
+         { path: "/login", element: <LoginPage /> },
          // { path: "/forgot-password", element: <ForgotPasswordPage /> },
          // { path: "/reset-password", element: <ResetPasswordPage /> }
-      ]
-   }
-])
-
+      ],
+   },
+]);
 
 export default function Router() {
    return <RouterProvider router={router} />;
-};
+}

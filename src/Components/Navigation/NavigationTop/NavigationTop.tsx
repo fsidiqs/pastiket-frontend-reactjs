@@ -1,11 +1,11 @@
 import React from "react";
 import { BsChevronLeft } from "react-icons/bs";
-import styles from "./NavbarTop.module.css";
+import styles from "./NavigationTop.module.css";
 
-import { NavbarItemProps } from "../../../modules/types/navbar.types";
-const Navbar: React.FC<NavbarItemProps> = (props) => {
+import { NavigationItemProps } from "../../../modules/types/navigation.types";
+const Navigation: React.FC<NavigationItemProps> = (props) => {
    return (
-      <section className={`${styles.navbarSection} container`}>
+      <section className={`${styles.navigationSection} container`}>
          <div className={`${styles.navsDiv} flex`}>
             <BsChevronLeft className={`${styles.icon} ${styles.leftIcon}`} />
             <div>
@@ -23,4 +23,4 @@ const Navbar: React.FC<NavbarItemProps> = (props) => {
    );
 };
 
-export default Navbar;
+export default Navigation;

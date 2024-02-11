@@ -20,7 +20,7 @@
    --greyBg: hsl(0, 0%, 96%);
    --greyText: rgb(190, 190, 190);
    --inputColor: hsl(174, 15%, 97%);
- }
+}
 
 a {
    text-decoration: none;
@@ -67,33 +67,110 @@ li {
    font-weight: 500;
 }
 
-.btn:hover a{
-  color: var(--whiteColor)
+.btn:hover a {
+   color: var(--whiteColor);
 }
 
 .secIntro {
-  max-width: 70%;
-  text-align: center;
-  margin: 0 auto 2rem;
+   max-width: 70%;
+   text-align: center;
+   margin: 0 auto 2rem;
 }
 
-.secIntro .secTitle{
-  color: var(--blackColor);
-  line-height: 1.5rem;
-  padding-bottom: .5rem;
+.secIntro .secTitle {
+   color: var(--blackColor);
+   line-height: 1.5rem;
+   padding-bottom: 0.5rem;
 }
 
 .secIntro p {
-  font-size: 13px;
-  color: var(--textColor);
-  font-weight: 500;
+   font-size: 13px;
+   color: var(--textColor);
+   font-weight: 500;
 }
 
-img, video {
-  width: 100%;
-  height: auto;
+img,
+video {
+   width: 100%;
+   height: auto;
 }
 
 input {
-  font-size: 100%;
+   font-size: 100%;
+}
+
+/*! CSS Used from: http://127.0.0.1:5500/css/responsive.css */
+.submit1 {
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding: 10px 11px 10px 15px;
+   padding-left: 15px;
+   padding-right: 15px;
+   background: rgb(0, 0, 0);
+   font-weight: 700;
+   display: flex;
+   align-items: center;
+   border-radius: 8px;
+   justify-content: center;
+   color: rgb(255, 255, 255);
+}
+
+/*! CSS Used from: http://127.0.0.1:5500/css/framework.css */
+* {
+   box-sizing: border-box;
+}
+:not(:has(*)):not(:empty) {
+   white-space: break-spaces;
+}
+
+.textNormal {
+   font-size: 12px;
+}
+
+.heading1text {
+   line-height: 24px;
+   font-weight: 700;
+}
+
+.header1 {
+   display: flex;
+   flex-direction: column;
+}
+
+.heading1Text {
+   line-height: 24px;
+   font-weight: 700;
+}
+
+.buttonPrimary1 {
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-right: 12px;
+   padding-left: 12px;
+   background: rgb(0, 0, 0);
+   font-weight: 400;
+   color: rgb(253, 246, 246);
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   min-width: 69px;
+   justify-content: center;
+   border-radius: 8px;
+}
+
+.button1 {
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-right: 12px;
+   padding-left: 12px;
+   background: rgb(255, 255, 255);
+   font-weight: 400;
+   color: rgb(0, 0, 0);
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   min-width: 69px;
+   justify-content: center;
+   border-radius: 8px;
+   border: 1px solid rgba(0, 0, 0, 1);
 }

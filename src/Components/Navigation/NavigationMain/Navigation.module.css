@@ -1,0 +1,30 @@
+/*! CSS Used from: http://127.0.0.1:5500/css/responsive.css */
+@media screen and (max-width: 480px) {
+   .navItem {
+      /* width: 100px; */
+      /* height: 100px; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+   }
+   .navigation {
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      bottom: 0%;
+      /* height: 60px; */
+      left: auto;
+      right: auto;
+      width: 100%;
+      z-index: 100;
+      display: flex;
+      background: rgb(255, 255, 255);
+      column-gap: 3em;
+      padding: 0.7em 0;
+
+   }
+   .navItemIcon {
+      font-size: 1.5em;
+   }
+}
