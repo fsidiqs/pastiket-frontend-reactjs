@@ -1,5 +1,5 @@
 /*! CSS Used from: http://127.0.0.1:5500/css/responsive.css */
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) { */
    .navItem {
       /* width: 100px; */
       /* height: 100px; */
@@ -27,4 +27,4 @@
    .navItemIcon {
       font-size: 1.5em;
    }
-}
+/* } */

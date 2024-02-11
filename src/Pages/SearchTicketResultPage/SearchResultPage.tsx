@@ -1,3 +1,4 @@
+import DateFilter from "../../Components/DateFilter/DateFilter";
 import NavigationTop from "../../Components/Navigation/NavigationTop/NavigationTop";
 import SearchTicketResultsContainer from "../../Components/SearchTicketResultContainer/SearchTicketResultContainer";
 
@@ -8,6 +9,7 @@ const SearchTicketResultsPage: React.FC = () => {
    return (
       <>
          <NavigationTop MenuName="CGK - JED" MenuDescription="CGK - Jakarta -> JDH - Jeddah"/>
+         <DateFilter/>
          <SearchTicketResultsContainer/>
       </>
    );

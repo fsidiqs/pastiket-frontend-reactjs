@@ -174,3 +174,11 @@ input {
    border-radius: 8px;
    border: 1px solid rgba(0, 0, 0, 1);
 }
+
+.bodyContentFlexRow {
+   display: flex;
+   row-gap: 10px;
+   flex-direction: column;
+   margin-bottom: 0px;
+   padding-bottom: 125px;
+}

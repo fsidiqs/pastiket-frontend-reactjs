@@ -7,7 +7,7 @@ export const colors = {
     white: '#FFFFFF',
     black: '#000000',
     red: '#F05076',
-    green: '#54C2BA',
+    green: '#18675f',
     orange: '#F6BA44',
     yellow: '#F6BA44',
     bone: '#F3F3F3',
@@ -15,7 +15,7 @@ export const colors = {
     lightGray: '#E4E4E4',
     softBlack: '#4B4B4B',
     get primary() {
-        return this.purple;
+        return this.green;
     },
 };
 

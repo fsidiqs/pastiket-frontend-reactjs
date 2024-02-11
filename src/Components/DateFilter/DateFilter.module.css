@@ -1,0 +1,124 @@
+.dateFilter {
+   display: flex;
+   column-gap: 5px;
+   overflow-x: scroll;
+   justify-content: start;
+}
+.heading1Text {
+   line-height: 24px;
+   font-weight: 700;
+}
+.dateFilterItem {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding-left: 20px;
+   padding-right: 20px;
+   text-align: center;
+   border: 1px solid rgb(171, 171, 171);
+   border-radius: 8px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.textgrey {
+   font-size: 12px;
+   font-weight: 400;
+   line-height: 18px;
+   letter-spacing: 0em;
+   color: #808089;
+   padding-top: 0px;
+   padding-right: 18px;
+   padding-bottom: 0px;
+   padding-left: 0px;
+   text-align: left;
+}
+.dateFilterItemActive {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding-left: 20px;
+   padding-right: 20px;
+   text-align: center;
+   border: 1px solid rgb(171, 171, 171);
+   border-radius: 8px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   background: var(--PrimaryColor);
+   color: white;
+}
+.text-small {
+   font-size: 12px;
+   font-weight: 400;
+   line-height: 18px;
+   letter-spacing: 0em;
+   padding-top: 0px;
+   padding-right: 18px;
+   padding-bottom: 0px;
+   padding-left: 0px;
+   text-align: left;
+}
+
+/*! CSS Used from: http://localhost:5500/css/responsive.css */
+.contentWrapper {
+   padding-left: 15px;
+   padding-right: 15px;
+}
+.filterButtons {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.filterItem {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   padding-left: 20px;
+   padding-right: 20px;
+   text-align: center;
+   border: 1px solid rgb(171, 171, 171);
+   border-radius: 8px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   column-gap: 10px;
+}
+.iconSize {
+   font-size: 11px;
+}
+
+/*! CSS Used from: http://localhost:5500/css/responsive.css */
+.greyBg {
+   background: #f5f5fa;
+}
+
+.activeFilterItem {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 10px;
+   text-align: center;
+   border: 1px solid rgb(171, 171, 171);
+   border-radius: 2rem;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   flex-wrap: nowrap;
+   column-gap: 10px;
+   background-color: white;
+}
+
+.closeButtonCircle {
+   border-radius: 1rem;
+   background: rgb(255, 255, 255);
+}
+
+.activeFilters {
+   display: flex;
+   flex-direction: row;
+   column-gap: 10px;
+   overflow: scroll;
+}
