@@ -12,6 +12,8 @@ import LoginPage from "../Pages/Login/Login";
 import NotAuthenticated from "./not-authenticated";
 import Authenticated from "./authenticated";
 import Navigation from "../Components/Navigation/NavigationMain/Navigation";
+import OrderDetailPage from "../Pages/OrderDetail/OrderDetail";
+import PaymentPage from "../Pages/Payment/Payment";
 
 // const BaseRouter = () => (
 //    <Routes>
@@ -47,7 +49,9 @@ const router = createBrowserRouter([
                   path: "/search-ticket-result",
                   element: <SearchTicketResultPage />,
                },
-               { path: "/ticket-details", element: <TicketDetailPage /> },
+               // { path: "/ticket-details", element: <TicketDetailPage /> },
+               { path: "/order-details", element: <OrderDetailPage /> },
+               { path: "/payment", element: <PaymentPage/> },
             ],
          },
       ],

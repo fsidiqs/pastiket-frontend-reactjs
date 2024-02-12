@@ -1,0 +1,119 @@
+.componentWrapper {
+   padding-top: 15px;
+   padding-right: 15px;
+   padding-bottom: 15px;
+   padding-left: 15px;
+}
+.submit-1 {
+   color: white;
+   font-weight: 600;
+   row-gap: 0.5rem;
+   column-gap: 0.5rem;
+   justify-content: center;
+   margin-top: 1rem;
+   padding-top: 0.6rem;
+   padding-right: 0.6rem;
+   padding-bottom: 0.6rem;
+   padding-left: 0.6rem;
+   text-align: center;
+   width: 100%;
+   background: hsl(174, 62%, 25%);
+   border-radius: 3rem;
+}
+.heading1Text {
+   line-height: 24px;
+   font-weight: 700;
+}
+.airlineName {
+   line-height: 24px;
+   font-weight: 700;
+}
+.flightTypeWrapper {
+   display: flex;
+   flex-direction: row;
+   row-gap: 0px;
+   column-gap: 10px;
+   align-items: flex-start;
+}
+.flightInfo1 {
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   column-gap: 50px;
+   flex-direction: row;
+}
+.flightPrice {
+   font-weight: 700;
+   line-height: 24px;
+   color: #12524b;
+   font-size: 18px;
+}
+.contentwrapper {
+   padding-left: 15px;
+   padding-right: 15px;
+}
+.badgeprimary {
+   background: #12524b;
+   border: 1px solid #18675f;
+   border-radius: 8px;
+   color: white;
+   cursor: pointer;
+   font-size: 0.8rem;
+   margin-top: 0;
+   margin-right: 2px;
+   margin-bottom: 0;
+   margin-left: 2px;
+   padding-top: 10px;
+   padding-right: 10px;
+   padding-bottom: 10px;
+   padding-left: 10px;
+   text-align: center;
+}
+.badgedanger {
+   background: #c94437;
+   border: 1px solid #18675f;
+   border-radius: 8px;
+   color: white;
+   cursor: pointer;
+   font-size: 0.8rem;
+   margin-top: 0;
+   margin-right: 2px;
+   margin-bottom: 0;
+   margin-left: 2px;
+   padding-top: 10px;
+   padding-right: 10px;
+   padding-bottom: 10px;
+   padding-left: 10px;
+   text-align: center;
+}
+.airlinerouterow {
+   display: flex;
+   flex-direction: column;
+}
+.divider {
+   border-bottom: 1px solid rgb(0, 0, 0);
+   border-color: #ebebf0;
+}
+.flight-detail-content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   row-gap: 15px;
+   padding-top: 15px;
+   padding-right: 15px;
+   padding-bottom: 15px;
+   padding-left: 15px;
+}
+.item-2-flex {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.booking-details {
+   display: flex;
+   flex-direction: column;
+   row-gap: 2.5px;
+}
+body .amount-big {
+   font-size: 30px;
+}

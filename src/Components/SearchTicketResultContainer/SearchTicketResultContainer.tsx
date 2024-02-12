@@ -1,7 +1,7 @@
-
 import styles from "./SearchTicketResultContainer.module.css";
 import React from "react";
 import airlineImg from "../../Assets/gi.png";
+import { useNavigate } from "react-router-dom";
 
 const Offers = [
    {
@@ -21,6 +21,8 @@ const Offers = [
 ];
 
 const SearchTicketResultContainer: React.FC = () => {
+   const navigate = useNavigate();
+
    return (
       <section className="container section">
          <div>
@@ -63,7 +65,12 @@ const SearchTicketResultContainer: React.FC = () => {
                               </div>
                            </div>
 
-                           <button className={`${styles.btn} btn flex`}>
+                           <button
+                              className={`${styles.btn} btn flex`}
+                              onClick={() => {
+                                 return navigate("/order-details");
+                              }}
+                           >
                               Pilih Program
                            </button>
                         </div>

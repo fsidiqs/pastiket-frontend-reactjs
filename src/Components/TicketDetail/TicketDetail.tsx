@@ -5,7 +5,15 @@ import { FaPlaneDeparture, FaPlaneArrival } from "react-icons/fa";
 import styles from "./TicketDetail.module.css";
 import React from "react";
 import airlineImg from "../../Assets/gi.png";
-import { FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, Input } from "@mui/material";
+import {
+   FormControl,
+   FormControlLabel,
+   FormLabel,
+   Radio,
+   RadioGroup,
+   Input,
+} from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const Offers = {
    id: 1,
@@ -18,24 +26,25 @@ const Offers = {
 const targets = [
    {
       value: 0,
-      label: "Manual"
+      label: "Manual",
    },
    {
       value: 25,
-      label: "25 Pax"
+      label: "25 Pax",
    },
    {
       value: 35,
-      label: "35 Pax"
+      label: "35 Pax",
    },
    {
       value: 45,
-      label: "45 Pax"
+      label: "45 Pax",
    },
-
-]
+];
 
 const SearchTicketResultContainer: React.FC = () => {
+   const navigate = useNavigate();
+
    return (
       <section className="container section">
          <div className={`${styles.flightDetails}`}>
@@ -157,7 +166,7 @@ const SearchTicketResultContainer: React.FC = () => {
                         );
                      })}
                   </RadioGroup>
-                  <Input/>
+                  <Input />
                </FormControl>
             </div>
 
@@ -166,7 +175,6 @@ const SearchTicketResultContainer: React.FC = () => {
                <span>25 Jamaah</span>
             </div>
             <div className={styles.ticketFooter}>
-             
                <div className={styles.ticketPrice}>
                   <h4>RP {Offers.price}</h4>
                </div>

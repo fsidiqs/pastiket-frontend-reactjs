@@ -1,0 +1,220 @@
+/*! CSS Used from: http://127.0.0.1:5500/css/responsive.css */
+.componentWrapper {
+   padding-top: 15px;
+   padding-right: 15px;
+   padding-bottom: 15px;
+   padding-left: 15px;
+}
+.submit-1 {
+   color: white;
+   font-weight: 600;
+   row-gap: 0.5rem;
+   column-gap: 0.5rem;
+   justify-content: center;
+   margin-top: 1rem;
+   padding-top: 0.6rem;
+   padding-right: 0.6rem;
+   padding-bottom: 0.6rem;
+   padding-left: 0.6rem;
+   text-align: center;
+   width: 100%;
+   background: hsl(174, 62%, 25%);
+   border-radius: 3rem;
+}
+.heading1Text {
+   line-height: 24px;
+   font-weight: 700;
+}
+.airlineRoute {
+   display: flex;
+   column-gap: 15px;
+}
+.airlineName {
+   line-height: 24px;
+   font-weight: 700;
+}
+.airlineLogo {
+   width: 50px;
+}
+.flightTypeWrapper {
+   display: flex;
+   flex-direction: row;
+   row-gap: 0px;
+   column-gap: 10px;
+   align-items: flex-start;
+}
+.flightInfo1 {
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   column-gap: 50px;
+   flex-direction: row;
+}
+.flightInfo2 {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   column-gap: 50px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.flightPrice {
+   font-weight: 700;
+   line-height: 24px;
+   color: #12524b;
+   font-size: 18px;
+}
+.contentwrapper {
+   padding-left: 15px;
+   padding-right: 15px;
+}
+.flightInfoTitle {
+   color: #74817f;
+   font-weight: 500;
+   font-size: small;
+}
+.badgeprimary {
+   background: #12524b;
+   border: 1px solid #18675f;
+   border-radius: 8px;
+   color: white;
+   cursor: pointer;
+   font-size: 0.8rem;
+   margin-top: 0;
+   margin-right: 2px;
+   margin-bottom: 0;
+   margin-left: 2px;
+   padding-top: 10px;
+   padding-right: 10px;
+   padding-bottom: 10px;
+   padding-left: 10px;
+   text-align: center;
+}
+.badgedanger {
+   background: #c94437;
+   border: 1px solid #18675f;
+   border-radius: 8px;
+   color: white;
+   cursor: pointer;
+   font-size: 0.8rem;
+   margin-top: 0;
+   margin-right: 2px;
+   margin-bottom: 0;
+   margin-left: 2px;
+   padding-top: 10px;
+   padding-right: 10px;
+   padding-bottom: 10px;
+   padding-left: 10px;
+   text-align: center;
+}
+.airlinerouterow {
+   display: flex;
+   flex-direction: column;
+}
+.flight-event-type {
+   display: flex;
+   flex-direction: column;
+   color: rgb(64, 64, 64);
+}
+.flight-detail-card {
+   border-radius: 8px;
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   justify-content: center;
+   row-gap: 15px;
+   border: 1px solid rgba(0, 0, 0, 1);
+   border-color: #ebebf0;
+}
+.divider {
+   border-bottom: 1px solid rgb(0, 0, 0);
+   border-color: #ebebf0;
+}
+.flight-detail-content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   row-gap: 15px;
+   padding-top: 15px;
+   padding-right: 15px;
+   padding-bottom: 15px;
+   padding-left: 15px;
+}
+.input-jamaah-group {
+}
+.input-jamaah-buttons {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   column-gap: 0px;
+   row-gap: 0px;
+}
+.total-jamaah-input-wrapper {
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   column-gap: 50px;
+   flex-direction: column;
+}
+body .t252 {
+   row-gap: 0px;
+   column-gap: 5px;
+}
+body .t254 {
+   display: flex;
+   flex-direction: column;
+}
+body .t259 {
+   font-size: 1.5em;
+}
+body .t264 {
+   display: flex;
+   flex-direction: column;
+}
+body .t267 {
+   align-items: center;
+   justify-content: space-between;
+}
+body .t268 {
+   display: flex;
+   flex-direction: column;
+}
+body .t272 {
+   display: flex;
+   flex-direction: column;
+}
+body .t275 {
+   display: flex;
+   flex-direction: column;
+}
+body .t283 {
+   font-size: 1.5em;
+}
+body .t287 {
+   display: flex;
+   flex-direction: column;
+}
+body .t291 {
+   align-items: center;
+   justify-content: space-between;
+}
+body .t292 {
+   display: flex;
+   flex-direction: column;
+}
+body .t295 {
+   display: flex;
+   flex-direction: column;
+}
+body .t299 {
+   display: flex;
+   flex-direction: column;
+}
+body .t319 {
+   display: flex;
+   align-items: center;
+   border-radius: 8px;
+   justify-content: center;
+}
+body .t320 {
+   color: rgb(255, 255, 255);
+}
