@@ -16,7 +16,7 @@ const Home = () => {
                return navigate("/search-ticket");
             }}
          >
-            <span className={`${HomeCtaCSS.t112}`}>Cari Tiket Umroh</span>
+            <span className={`${HomeCtaCSS.findTicketButton}`}>Cari Tiket Umroh</span>
          </div>
       </div>
    );

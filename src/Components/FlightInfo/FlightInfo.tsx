@@ -1,6 +1,7 @@
 import React from "react";
 import FlightInfoCSS from "./FlightInfo.module.css"; // Import CSS module
 import giIcon from "../../Assets/gi-icon.png";
+import { useNavigate } from "react-router-dom";
 
 const Flights = [
    {
@@ -61,6 +62,8 @@ const Flights = [
 ];
 
 const FlightInfo = () => {
+   const navigate = useNavigate();
+
    return (
       <div className={FlightInfoCSS.componentWrapper}>
          {Flights.map((flight) => {
@@ -90,8 +93,8 @@ const FlightInfo = () => {
                            <div className={`${FlightInfoCSS.buttonPrimary1} `}>
                               <span>Direct</span>
                            </div>
-                           <div className={`${FlightInfoCSS.buttonPrimary1} `}>
-                              <span>9 DAAY</span>
+                           <div className={`btn-danger`}>
+                              <span>9 DAY</span>
                            </div>
                         </div>
                      </div>
@@ -107,7 +110,12 @@ const FlightInfo = () => {
                         </div>
                      </div>
                      <div>
-                        <div className="submit1">
+                        <div
+                           className="submit1"
+                           onClick={() => {
+                              return navigate("/search-ticket");
+                           }}
+                        >
                            <span>Pilih Program</span>
                         </div>
                      </div>
