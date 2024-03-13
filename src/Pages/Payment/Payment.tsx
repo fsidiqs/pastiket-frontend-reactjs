@@ -1,7 +1,24 @@
+import React, { useState } from "react";
+import ButtonOptionsArrow from "../../Components/Common/Buttons/ButtonOptionsArrow";
 import NavigationTop from "../../Components/Navigation/NavigationTop/NavigationTop";
 import styles from "./Payment.module.css";
+import Modal from "../../Components/Common/Modal/Modal";
 
 const PaymentPage: React.FC = () => {
+   const [isModalOpen, setIsModalOpen] = useState(false);
+   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState(
+      "pilih metode pembayaran"
+   );
+
+   const toggleModal = () => {
+      setIsModalOpen(!isModalOpen);
+   };
+
+   const handlePaymentMethodChange = (method: string) => {
+      setSelectedPaymentMethod(method);
+      toggleModal();
+   };
+
    return (
       <>
          <NavigationTop
@@ -57,10 +74,20 @@ const PaymentPage: React.FC = () => {
                   </span>
                </div>
                <div className={`${styles.divider}`}></div>
-               <div className={`${styles["item-2-flex"]}`}>
+               <div className={`${styles["payment-method-input-group"]}`}>
                   <span className={`${styles.airlineName}`}>
                      Metode Pembayaran
                   </span>
+                  <ButtonOptionsArrow
+                     onButtonClick={toggleModal}
+                     placeholder={selectedPaymentMethod}
+                     className={`${styles["payment-method-button"]}`}
+                  />
+                  <Modal
+                     isOpen={isModalOpen}
+                     onClose={toggleModal}
+                     onOptionClick={handlePaymentMethodChange}
+                  />
                </div>
                <div className={`${styles["booking-details"]}`}>
                   <span className={`${styles.airlineName}`}>Pembayaran DP</span>

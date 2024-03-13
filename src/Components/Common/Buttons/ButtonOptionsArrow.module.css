@@ -1,0 +1,34 @@
+.button-style {
+   padding: 10px 20px; /* Adjust padding as needed */
+   border: 1px solid grey; /* No border */
+   font-size: 16px; /* Adjust font size as needed */
+   border-radius: 5px; /* Rounded corners */
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   cursor: pointer; /* Pointer cursor on hover */
+   text-decoration: none; /* No underline */
+   color: grey;
+ }
+ 
+ .button-style:active {
+   background-color: #e0e0e0; /* Slightly darker background on click */
+ }
+ 
+ .button-style:focus {
+   outline: none; /* No focus outline */
+ }
+ 
+ .button-style > span {
+   margin-right: 10px; /* Space before the arrow */
+ }
+ 
+ .button-style > .arrow {
+   /* Styling for the arrow, if you are using a font or SVG for the arrow */
+ }
+ 
+ /* Example usage with an icon or SVG arrow */
+ /* Adjust size, style, or alignment as needed */
+ .button-style > .icon {
+   margin-left: auto; /* Push the icon to the right */
+ }
