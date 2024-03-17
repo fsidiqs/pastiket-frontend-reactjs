@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./Login.module.css";
 import { FaRegEyeSlash, FaRegEye } from "react-icons/fa";
-import WelcomeLogo from "../../Assets/logo.png";
+import WelcomeLogo from "../../Assets/pastiket-logo.png";
 
 import { SubmitHandler, useForm, Controller } from "react-hook-form";
 import { login } from "../../modules/auth/auth.services";
@@ -17,6 +17,8 @@ import Validations from "../../utils/validation";
 import { colors } from "../../utils/colors";
 import Button from "../../Components/Common/Button/Button";
 import { setAuthToken } from "../../modules/auth/redux/auth/auth.actions";
+import { NavLink, Outlet } from "react-router-dom";
+
 type LoginFormInputs = {
    email: string;
    password: string;
@@ -50,7 +52,7 @@ const LoginPage: React.FC = () => {
       //    },
       //    onRequest: (state) => setLoading(state),
       //    onSuccess: ({ data }) => {
-           
+
       //       dispatch(setAuthToken(data.auth_token));
       //    },
       //    onError: ({ type, invalid_args, message }) => {
@@ -98,99 +100,115 @@ const LoginPage: React.FC = () => {
                         alt="a Name"
                         className={styles.logo}
                      />
-                     <h3 className="">Login</h3>
                   </div>
+                  <div className={styles.loginLabel}>Login</div>
                   <form method="post" onSubmit={handleSubmit(loginHandler)}>
-                     <Controller
-                        name="email"
-                        defaultValue="fajar@mindtera.com"
-                        control={control}
-                        rules={{
-                           required: {
-                              value: true,
-                              message: "email required",
-                           },
-                           pattern: {
-                              value: Validations.email,
-                              message: "invalid email",
-                           },
-                        }}
-                        render={({ field }) => (
-                           <FormControl className={styles.formControl}>
-                              <LoginFormInput
-                                 {...field}
-                                 placeholder="Email"
-                                 type="email"
-                                 errorMessage={errors.email?.message}
-                                 className={styles.inputWrapper}
-                              />
-                           </FormControl>
-                        )}
-                     />
-                     <Controller
-                        name="password"
-                        defaultValue="12345678"
-                        control={control}
-                        rules={{
-                           required: {
-                              value: true,
-                              message: "password required",
-                           },
-                        }}
-                        render={({ field }) => (
-                           <FormControl className={styles.formControl}>
-                              <LoginFormInput
-                                 className={styles.inputWrapper}
-                                 {...field}
-                                 placeholder="password"
-                                 type={showPassword ? "text" : "password"}
-                                 endAdornment={
-                                    <InputAdornment position="end">
-                                       <IconButton
-                                          onClick={() =>
-                                             setShowPassword(
-                                                (prevState) => !prevState
-                                             )
-                                          }
-                                       >
-                                          {showPassword ? (
-                                             <FaRegEyeSlash
-                                                size={13}
-                                                color={
-                                                   errors.password
-                                                      ? colors.red
-                                                      : colors.purple
-                                                }
-                                             />
-                                          ) : (
-                                             <FaRegEye
-                                                size={13}
-                                                color={
-                                                   errors.password
-                                                      ? colors.red
-                                                      : colors.purple
-                                                }
-                                             />
-                                          )}
-                                       </IconButton>
-                                    </InputAdornment>
-                                 }
-                                 autoComplete="off"
-                                 errorMessage={errors.password?.message}
-                              />
-                           </FormControl>
-                        )}
-                     />
-                     <Button
-                        type="submit"
-                        // disabled={
-                        //    !isDirty || !isValid || !isValidLength || loading
-                        // }
-                        loading={loading}
-                     >
-                        Login
-                     </Button>
+                     <div className={styles.formContainer}>
+                        <div className={styles.formInputLabel}>
+                           Nomor Whatsapp
+                        </div>
+                        <Controller
+                           name="email"
+                           control={control}
+                           rules={{
+                              required: {
+                                 value: true,
+                                 message: "email required",
+                              },
+                              pattern: {
+                                 value: Validations.email,
+                                 message: "invalid email",
+                              },
+                           }}
+                           render={({ field }) => (
+                              <FormControl className={styles.formControl}>
+                                 <LoginFormInput
+                                    {...field}
+                                    placeholder="Masukan nomor Whatsapp"
+                                    type="text"
+                                    errorMessage={errors.email?.message}
+                                    className={styles.inputWrapper}
+                                 />
+                              </FormControl>
+                           )}
+                        />
+
+                        <div className={styles.formInputLabel}>Password</div>
+                        <Controller
+                           name="password"
+                           control={control}
+                           rules={{
+                              required: {
+                                 value: true,
+                                 message: "password required",
+                              },
+                           }}
+                           render={({ field }) => (
+                              <FormControl className={styles.formControl}>
+                                 <LoginFormInput
+                                    className={styles.inputWrapper}
+                                    {...field}
+                                    placeholder="Masukkan password anda"
+                                    type={showPassword ? "text" : "password"}
+                                    endAdornment={
+                                       <InputAdornment position="end">
+                                          <IconButton
+                                             onClick={() =>
+                                                setShowPassword(
+                                                   (prevState) => !prevState
+                                                )
+                                             }
+                                          >
+                                             {showPassword ? (
+                                                <FaRegEyeSlash
+                                                   size={13}
+                                                   color={
+                                                      errors.password
+                                                         ? colors.red
+                                                         : colors.purple
+                                                   }
+                                                />
+                                             ) : (
+                                                <FaRegEye
+                                                   size={13}
+                                                   color={
+                                                      errors.password
+                                                         ? colors.red
+                                                         : colors.purple
+                                                   }
+                                                />
+                                             )}
+                                          </IconButton>
+                                       </InputAdornment>
+                                    }
+                                    autoComplete="off"
+                                    errorMessage={errors.password?.message}
+                                 />
+                              </FormControl>
+                           )}
+                        />
+                        {/* <Button
+                           type="submit"
+                           // disabled={
+                           //    !isDirty || !isValid || !isValidLength || loading
+                           // }
+                           loading={loading}
+                        >
+                           Masuk
+                        </Button> */}
+                        <NavLink to="/dashboard">
+                           <Button type="button">Masuk</Button>
+                        </NavLink>
+                     </div>
                   </form>
+                  <div className={styles.registerButtonContainer}>
+                     <div className={styles.registerText}>
+                        Belum punya akun?{" "}
+                     </div>
+                     <NavLink to="/register" className={styles.registerButton}>
+                        Daftar
+                     </NavLink>
+                  </div>
                </div>
             </Grid>
          </Grid>

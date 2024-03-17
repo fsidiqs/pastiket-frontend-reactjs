@@ -39,11 +39,12 @@ const router = createBrowserRouter([
       path: "/",
       element: <Authenticated />,
       children: [
+         { path: "/", element: <LoginPage /> },
          {
             path: "/",
             element: <Navigation />,
             children: [
-               { path: "/", element: <HomePage /> },
+               { path: "/dashboard", element: <HomePage /> },
                { path: "/search-ticket", element: <TicketsPage /> },
                {
                   path: "/search-ticket-result",
@@ -51,7 +52,7 @@ const router = createBrowserRouter([
                },
                // { path: "/ticket-details", element: <TicketDetailPage /> },
                { path: "/order-details", element: <OrderDetailPage /> },
-               { path: "/payment", element: <PaymentPage/> },
+               { path: "/payment", element: <PaymentPage /> },
             ],
          },
       ],

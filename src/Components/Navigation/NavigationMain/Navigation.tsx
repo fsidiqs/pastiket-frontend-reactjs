@@ -31,7 +31,7 @@ const Navigation = () => {
       <>
          <Outlet />
          <div className={`${NavigationCSS.navigation}`}>
-            <NavLink to="/" className={`${NavigationCSS.navItem}`}>
+            <NavLink to="/dashboard" className={`${NavigationCSS.navItem}`}>
                <HiOutlineHome className={`${NavigationCSS.navItemIcon}`} />
                <span className={`${NavigationCSS.t143}`}>Beranda</span>
             </NavLink>
